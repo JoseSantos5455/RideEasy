@@ -1,5 +1,4 @@
 import React from "react";
-import "./NavBar.css"; // Import the CSS file for styling
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -9,19 +8,19 @@ const useStyles = makeStyles({
     backgroundColor: "black",
     color: "white",
     "&:hover": {
-      backgroundColor: "gray", // Adjust hover color if needed
+      backgroundColor: "lightgray", // Adjust hover color if needed
     },
+    marginRight: "30px", // Adjust margin to create space between buttons
   },
   buttonContainer: {
-    position: "fixed",
-    top: "45px",
-    right: "30px",
-    display: "flex",
-    flexDirection: "row",
     zIndex: 1, // Ensure the buttons are on top of other elements
-  },
-  buttonSpacing: {
-    marginRight: "20px", // Adjust the margin to create space between buttons
+    position: "sticky", // Change to "sticky" to stick the navbar to the top
+    top: "0",
+    backgroundColor: "gray", // Background color for the navbar
+    padding: "10px 20px", // Padding for the navbar
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center", // Align items vertically
   },
 });
 
@@ -29,13 +28,10 @@ const NavBar = () => {
   const classes = useStyles();
 
   return (
-    <div className="navbar">
+    <div className={classes.buttonContainer}>
       <h1>Ride Easy</h1>
-      <div className={classes.buttonContainer}>
-        <Button
-          variant="contained"
-          className={`${classes.customButton} ${classes.buttonSpacing}`}
-        >
+      <div>
+        <Button variant="contained" className={`${classes.customButton}`}>
           Sign Up
         </Button>
         <Button variant="contained" className={classes.customButton}>
