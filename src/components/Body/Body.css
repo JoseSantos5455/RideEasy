@@ -1,5 +1,5 @@
 .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -20,17 +20,18 @@
   }
   
   .card {
-    position: relative;
+    position: fixed;
+    top: 100px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
     z-index: 1;
     display: flex;
     flex-direction: column;
-    width: 500px; /* Adjust the width as needed */
+    width: 500px;
     height: 500px;
-    /* background: linear-gradient(to bottom, grey 50%, white 50%); */
     border-radius: 10px;
     padding: 20px;
-    margin-top: 200px; /* Adjust margin to position it away from the edges */
   }
+  
   
   .card .top {
     flex: 1;
