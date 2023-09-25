@@ -28,18 +28,40 @@
     flex-direction: column;
     width: 500px;
     height: 500px;
-    border-radius: 10px;
+    border-radius: 50px; /* Adjust the value to control the roundness of the corners */
     padding: 20px;
   }
   
   
+  
   .card .top {
-    flex: 1;
+    flex: 1.7;
     background-color: grey;
+    border-radius: 50px 50px 0 0;
+    text-align: left;
+    font-family: poppins;
+    font-size:45px;
+    padding-left: 40px;
+    padding-top: 50px;
+    font-weight: 500;
+    
+    
+    
   }
   
   .card .bottom {
     flex: 4;
     background-color: white;
+    border-radius: 0 0 50px 50px;
+    font-family: poppins;
+    font-size:30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
+  .card .bottomlast{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
