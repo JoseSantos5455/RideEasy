@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
-  signInButton: {
+  customButton: {
     borderRadius: "40px",
     backgroundColor: "black",
     color: "white",
@@ -32,7 +32,7 @@ const Body = () => {
           <div className="bottom">
             <p>Get in the driver's seat and get paid</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Button variant="contained" className={classes.signInButton}>
+              <Button variant="contained" className={classes.customButton}>
                 Sign Up
               </Button>
             </div>

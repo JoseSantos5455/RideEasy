@@ -1,7 +1,12 @@
 import React from "react";
+import "./FourRides.css";
 
 const FourRides = () => {
-  return <div>Amayuru</div>;
+  return (
+    <div>
+      <div className="card">Amayuru</div>
+    </div>
+  );
 };
 
 export default FourRides;
