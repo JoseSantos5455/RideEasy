@@ -23,7 +23,7 @@ const Body = () => {
 
   return (
     <div className="background">
-      <img src={backgroundImage} alt="Background" />
+      <img src={backgroundImage} alt="Background" className="bg-image" />
       <div className="overlay">
         <div className="card">
           <div className="top">

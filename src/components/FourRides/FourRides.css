@@ -1,12 +1,75 @@
-.card {
-    position: fixed;
-    top: 100px; /* Adjust the top position as needed */
-    left: 20px; /* Adjust the left position as needed */
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 500px;
-    border-radius: 50px; /* Adjust the value to control the roundness of the corners */
-    padding: 20px;
-  }
+/* FourRides.css */
+.cardFourRides {
+  margin-top: 60px;
+  margin-left: 60px;
+  z-index: 1;
+  display: inline-table;
+  width: 200px; /* Adjust the width of the card */
+  height: 250px; /* Adjust the height of the card */
+  border-radius: 50px;
+  padding: 20px;
+  background-color: rgb(172, 172, 172);
+  font-size: 24px; /* Adjust the font size */
+  text-align: center;
+  font-weight: 500;
+}
+.cardFourRidesE {
+  margin-top: 60px;
+  margin-left: 60px;
+  top: 60px;
+  z-index: 1;
+  display: inline-table;
+  width: 200px; /* Adjust the width of the card */
+  height: 250px; /* Adjust the height of the card */
+  border-radius: 50px;
+  padding: 20px;
+  background-color: rgb(172, 172, 172);
+  font-size: 24px; /* Adjust the font size */
+  text-align: center;
+  font-weight: 500;
+}
+
+.cardFourRides .cardImage {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50px;
+  width: 100%; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Adjust the value to control the roundness of the image corners */
+}
+/* FourRides.css */
+/* ... your other styles ... */
+
+.cardFourRides {
+  display: inline-table; /* Display cards inline */
+  margin-left: 300px;
+  max-width: 200px;  /* Add some margin to create space between cards */
+}
+
+.cardFourRidesE .cardImage {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50px;
+  width: 100%; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Adjust the value to control the roundness of the image corners */
+}
+
+.cardFourRidesE {
+  display: inline-table; /* Display cards inline */
+  margin-left: 300px;
+  max-width: 200px;  /* Add some margin to create space between cards */
+}
+/* FourRides.css */
+
+/* ... your other styles ... */
+
+.cardFourRides:hover {
+  background-color: lightgray; /* Change the background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+}
+
+.cardFourRidesE:hover {
+  background-color: lightgray; /* Change the background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+}

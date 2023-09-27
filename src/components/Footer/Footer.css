@@ -1,0 +1,11 @@
+/* Footer.css */
+.custom-footer {
+    height: 100px; /* Adjust the height as needed */
+    background-color: #21081a;
+    padding: 20px;
+  }
+  
+  .custom-footer a {
+    color: white;
+  }
+  

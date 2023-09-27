@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     marginRight: "30px", // Adjust margin to create space between buttons
   },
   buttonContainer: {
-    zIndex: 1, // Ensure the buttons are on top of other elements
+    zIndex: 100, // Ensure the buttons are on top of other elements
     position: "sticky", // Change to "sticky" to stick the navbar to the top
     top: "0",
     backgroundColor: "gray", // Background color for the navbar
