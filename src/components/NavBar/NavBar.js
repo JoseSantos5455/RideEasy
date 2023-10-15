@@ -1,26 +1,27 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   customButton: {
-    borderRadius: "40px", // Adjust the value to change the corner radius
+    borderRadius: "40px",
     backgroundColor: "black",
     color: "white",
     "&:hover": {
-      backgroundColor: "lightgray", // Adjust hover color if needed
+      backgroundColor: "lightgray",
     },
-    marginRight: "30px", // Adjust margin to create space between buttons
+    marginRight: "30px",
   },
   buttonContainer: {
-    zIndex: 100, // Ensure the buttons are on top of other elements
-    position: "sticky", // Change to "sticky" to stick the navbar to the top
+    zIndex: 100,
+    position: "sticky",
     top: "0",
-    backgroundColor: "gray", // Background color for the navbar
-    padding: "10px 20px", // Padding for the navbar
+    backgroundColor: "gray",
+    padding: "10px 20px",
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center", // Align items vertically
+    alignItems: "center",
   },
 });
 
@@ -31,11 +32,24 @@ const NavBar = () => {
     <div className={classes.buttonContainer}>
       <h1>Ride Easy</h1>
       <div>
-        <Button variant="contained" className={`${classes.customButton}`}>
-          Sign Up
-        </Button>
         <Button variant="contained" className={classes.customButton}>
           Sign In
+        </Button>
+        <Button variant="contained" className={`${classes.customButton}`}>
+          <Link
+            to="/signup"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            Sign Up
+          </Link>
+        </Button>
+        <Button variant="contained" className={classes.customButton}>
+          <Link
+            to="/admin"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            Admin
+          </Link>
         </Button>
       </div>
     </div>

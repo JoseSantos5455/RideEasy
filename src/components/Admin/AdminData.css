@@ -1,0 +1,14 @@
+.admin-data-container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
