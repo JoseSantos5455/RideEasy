@@ -1,6 +1,7 @@
 # RideEasy Web Application
 
-RideEasy is a web application designed to facilitate ridesharing and connecting drivers with potential riders. The application allows users to sign up, find rides, and offer rides to others, creating a convenient platform for transportation.
+RideEasy is a web application designed to facilitate ridesharing and connecting drivers with potential riders
+. The application allows users to sign up, find rides, and offer rides to others, creating a convenient platform for transportation.
 
 ## Table of Contents
 
