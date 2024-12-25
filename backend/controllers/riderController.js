@@ -18,6 +18,7 @@ const getRider = async (req, res) => {
   }
   res.status(200).json(rider);
 };
+
 //create new rider
 const createRider = async (req, res) => {
   const {
